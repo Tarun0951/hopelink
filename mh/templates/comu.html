@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Community</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #7289da;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .chat-container {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .message {
+            background-color: #7289da;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .message.me {
+            background-color: #3f6f91;
+        }
+
+        .message input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .message button {
+            background-color: #7289da;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .message .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .message .user-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .message .user-name {
+            font-weight: bold;
+        }
+
+        .message .timestamp {
+            position: absolute;
+            right: 10px;
+            bottom: 5px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chat Community</h1>
+    </header>
+
+    <div class="container">
+        <div class="chat-container">
+            <div class="message">
+                <div class="user-info">
+                    <div class="user-icon"></div>
+                    <div class="user-name">User1</div>
+                </div>
+                It's been tough lately, dealing with stress and anxiety.
+                <div class="timestamp">12:30 PM</div>
+            </div>
+            <div class="message me">
+                <div class="user-info">
+                    <div class="user-icon"></div>
+                    <div class="user-name">You</div>
+                </div>
+                I understand, it's important to talk about it and seek help when needed.
+                <div class="timestamp">12:35 PM</div>
+            </div>
+            <div class="message">
+                <div class="user-info">
+                    <div class="user-icon"></div>
+                    <div class="user-name">User2</div>
+                </div>
+                I've been there too, but I found that opening up to friends and family made a big difference.
+                <div class="timestamp">12:40 PM</div>
+            </div>
+            <div class="message">
+                <div class="user-info">
+                    <div class="user-icon"></div>
+                    <div class="user-name">User3</div>
+                </div>
+                Sometimes, it's hard to ask for help, but it's essential to remember that there are people who care.
+                <div class="timestamp">12:45 PM</div>
+            </div>
+            <div class="message">
+                <div class="user-info">
+                    <div class="user-icon"></div>
+                    <div class="user-name">User1</div>
+                </div>
+                Absolutely, reaching out is a crucial step towards recovery.
+                <div class="timestamp">12:50 PM</div>
+            </div>
+            <!-- Add more messages here -->
+        </div>
+    </div>
+    
+
+        <div class="message">
+            <input type="text" placeholder="Type your message...">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Insights</title>
+    <link rel="stylesheet" href="insit.css">
+</head>
+<body>
+    <header>
+        <h1>Mental Health Insights Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="insights">
+            <div class="insight">
+                <h2>Suicide Confidence Level</h2>
+                <div class="confidence-level">
+                    <div class="confidence-bar" id="suicide-confidence"></div>
+                    <span id="confidence-value">75%</span>
+                </div>
+            </div>
+
+            <div class="insight">
+                <h2>Stress Levels</h2>
+                <div class="stress-level">
+                    <div class="stress-bar" id="stress-level"></div>
+                    <span id="stress-value">60%</span>
+                </div>
+            </div>
+        </div>
+        <div> 
+            <h3>Stress Levels Vizualization</h3>
+        </div>
+
+        <div id="chart" class="chart-container"></div>
+        <div> 
+            <h3>Sleep Patterns Vizualization</h3>
+        </div>
+        <div id="sleep-line-chart" class="chart-container"> </div>
+        
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="insit.js"></script>
+</body>
+</html>
+
+
+
+
